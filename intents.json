@@ -1,7 +1,7 @@
 {"intents": [
     {"tag": "greeting",
      "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
-     "responses": ["Hello", "Hi", "Hi there"]
+     "responses": ["Hi there"]
     },
     {"tag": "goodbye",
      "patterns": ["Bye", "See you later", "Goodbye"],
@@ -9,27 +9,147 @@
     },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+     "responses": ["Happy to help!"]
     },
     {"tag": "about",
      "patterns": ["Who are you?", "What are you?", "Who you are?" ],
-     "responses": ["I.m Joana, your bot assistant", "I'm Joana, an Artificial Intelligent bot"]
+     "responses": ["I am Thirisha, your bot assistant", "I'm Thirisha, an Artificial Intelligent bot"]
     },
     {"tag": "name",
     "patterns": ["what is your name", "what should I call you", "whats your name?"],
-    "responses": ["You can call me Joana.", "I'm Joana!", "Just call me as Joana"]
+    "responses": ["You can call me Thirisha."]
     },
     {"tag": "help",
     "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
     "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
     },
-    {"tag": "createaccount",
-    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
-    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
-    },
     {"tag": "complaint",
     "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
     "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    },
+    {"tag": "noanswer",
+    "patterns": [" "],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+    "context": [""]
+    },
+    {"tag": "admission related queries",
+    "patterns": ["I want to meet the head of admission department","How can i contact for admission process?","whom shall i contact for admission related queries?"],
+    "responses": ["call 9999999999 and book a slot for admission enquiry in our college"],
+    "context": [""]
+    },
+    {"tag": "invalid",
+    "patterns": ["Marry me","I love You","date me","chat with me","I am bored","how to get close with you"],
+    "responses": ["Please ask organisation related query.","Quote your problems related to organization"],
+    "context": [""]
+    },
+    {"tag": "about",
+    "patterns": ["how you doing?","doing?","how are you"],
+    "responses": ["Thanks For Asking! How can I help you?"],
+    "context": [""]
+   },
+   {"tag": "Weather",
+    "patterns": ["what is the weather today?"],
+    "responses": ["It's 36C according to accuweather"],
+    "context": [""]
+    },
+    {"tag": "options",
+    "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+    "responses": ["I can guide you through your Queries related to our Organization","I can clear your Queries related to your Organization"],
+    "context": [""]
+    },
+    {"tag": "pass percentage",
+        "patterns": ["what is the pass percentage","pass percentage","how much marks needed to get pass"],
+        "responses": [" For passing a semester examination and for promotion to the next semester (from 1st to 2nd, from 2nd to 3rd and from 3rd to 4th) a student shall have to obtain a minimum of 36% marks in each paper separately of Theory and Practical Examinations including dissertation / thesis / project work ."],
+        "context": [""]
+    },
+    {"tag": "Results",
+        "patterns": ["where to find results","results","Semester results","app for results", "show result","college results","where to check results"],
+        "responses": ["Kindly download this app in your Android device to check your results: shorturl.at/glvAU"],
+        "context": [""]
+    },
+    {"tag": "Eligbility",
+        "patterns": ["eligiblity","eligiblity critera", "am i eligible to apply","how to check whether i am eligible to apply"],
+        "responses": ["Students who scored more than 70% in 10th and 12th are eligible to apply"],
+        "context": [""]
+    },
+    {"tag": "courses available",
+        "patterns": ["What are the courses availabe?","can you list all the courses available in the college","how many courses are available in the college"],
+        "responses": ["Totally there are 5 courses \n 1. CSBS \n 2. CSE \n 3. IT \n 4. ECE \n 5.EEE"],
+        "context": [""]
+    },
+    {"tag": "Scholarship",
+        "patterns": ["am i eligible for Scholarship", "can i get scholarship","scholarship","i want scholarship","can i avail scholarship"],
+        "responses": ["For Scholarships follow this link.. https://rb.gy/qthzxl"],
+        "context": [""]
+    },
+    {"tag": "good organisation",
+        "patterns": ["is this a good college?","is this a good organisation?","is this college good for students?"],
+        "responses": ["this is one of the best reputed college in India"],
+        "context": [""]
+    },
+    {"tag": "average annual package",
+        "patterns": ["what is the average annual package?","what is the average package?","average package for students"],
+        "responses": ["the average annual package is 8LPA"],
+        "context": [""]
+    },
+    {"tag": "best course",
+        "patterns": ["which is the best course in the college?","which course has highest scope?","which course has a brightful future?","which course helps to earn more income?"],
+        "responses": ["Computer Science and Bussiness Systems is the best course powered by TCS company"]
+    },
+    {"tag": "HOD of CSBS",
+        "patterns": ["Who is the head of department for CSBS?","Who is the head for Computer Science and Business System?","who is the don of CSBS?"],
+        "responses": ["Dr. G Amudha is the head of department for Computer Science and Business Systems, who is working for our institution for about 18 years"]
+    },
+    {"tag": "principal",
+        "patterns": ["who is the principal in the college?","what is the name of the principal?","principal"],
+        "responses": ["Dr. N Anbucheziyan is the fromer principal of the college"]
+    },
+    {"tag": "founder",
+        "patterns": ["who is the founder of the college?","who is the chairman of the college?","what is the name of the chairman?"],
+        "responses": ["Mr. Munirathnam is the founder and chairman of the college"]
+    },
+    {"tag": "vice chairman",
+        "patterns": ["who is the vice chairman of the college?","what is the name of the vice chairman of the college?"],
+        "responses": ["Mr. Kishore Munirathnam is the vice chairman of the college"],
+        "context": [""]
+    },
+    {"tag": "fee structure",
+        "patterns": ["what is the fee structure in the college?","how much money should be paid to get into the college?","what is the fees for the courses in the college?"],
+        "responses": ["please contact admission department in the college"],
+        "context": [""]
+    },
+    {"tag": "autonomous",
+        "patterns": ["is the college autonomous?","affiliated to anna university"],
+        "responses": ["It is an autonomous college"],
+        "context": [""]
+    },
+    {"tag": "hostel facility",
+        "patterns": ["do the college have hostel facility?","can i stay in college hostel?","do the hostel provide food for students?","is there food facility in college?"],
+        "responses": ["Interested students can stay in the hostel and the food will also be provided for the entire academic year"]
+    },
+    {"tag":"transport facility",
+        "patterns": ["do the college have bus facility?","do the college provide bus service for students?","do the college have transport facility?"],
+        "responses": ["The college has many buses to pick and drop the students safely"]
+    },
+    {"tag": "college",
+        "patterns": ["tell me something about the college","can you brief about the college?","what's more about the college?"],
+        "responses": ["This college is located in kavaraipettai, TamilNadu. This is an autonomous and one of the best engineering colleges in India"]
+    },
+    {"tag": "counseling code",
+        "patterns": ["what is the counseling code for the college?","what is the tnea counselling code?","tnea counseling code","can you tell me the tnea counseling code"],
+        "responses": ["TNEA counseling code for the college is 1115"]
+    },
+    {"tag": "academic performance",
+        "patterns": ["can you tell me about the academic performance of the college","tell me about academic performance"],
+        "responses": ["The college is placed at second rank for academic excellence in TamilNadu"]
+    },
+    {"tag": "intake",
+        "patterns": ["what is the intake of csbs department?","can you tell me the intake of csbs?","how much seats are there for csbs?"],
+        "responses": ["Each course has 60 vacancies"]
+    },
+    {"tag": "lang",
+        "patterns": ["0"],
+        "responses": ["English Language chosen"]
     }
 ]
 }
